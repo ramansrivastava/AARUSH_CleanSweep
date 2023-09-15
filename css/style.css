@@ -881,3 +881,31 @@ textarea#comment::placeholder {
     height: auto;
     width:auto;
 }
+.client_taital{
+    height: auto;
+    width:auto;
+}
+
+.overlay-content a {
+    display: flexx;
+    position: relative;
+    color: #ffffff;
+  }
+  
+  .overlay-content a:after {
+    content: '';
+    position: absolute;
+    width:20%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 40%;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.50s ease-out;
+  }
+  
+  .overlay-content a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
